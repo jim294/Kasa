@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Kasa/static/css/main.aa795f8f.css",
+    "main.js": "/Kasa/static/js/main.35952f49.js",
+    "static/media/Montserrat-Medium.ttf": "/Kasa/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
+    "index.html": "/Kasa/index.html",
+    "main.aa795f8f.css.map": "/Kasa/static/css/main.aa795f8f.css.map",
+    "main.35952f49.js.map": "/Kasa/static/js/main.35952f49.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa795f8f.css",
+    "static/js/main.35952f49.js"
+  ]
+}
