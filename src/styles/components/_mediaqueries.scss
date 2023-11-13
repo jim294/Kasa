@@ -1,0 +1,208 @@
+@media (max-width: 375px) {
+
+  /* general */
+  header {
+    margin: 20px;
+    align-items: center;
+
+    .logo img {
+      height: 46px;
+    }
+  }
+
+  main {
+    margin: 20px;
+    gap: 22px;
+  }
+
+  footer {
+    gap: 10px;
+    margin-top: 0;
+
+    p {
+      display: flex;
+      text-align: center;
+      font-size: 12px;
+      width: 133px;
+    }
+  }
+
+  /* navigation */
+  .navigation {
+    ul {
+      gap: 10px;
+      margin: 0;
+
+      .nav-active {
+        &::after {
+          height: 1px;
+          bottom: 10px;
+        }
+      }
+    }
+
+    li {
+      font-size: 12px;
+    }
+  }
+
+  /* about */
+  .about_text {
+    padding: 0;
+    margin: 19px auto;
+    gap: 20px;
+  }
+
+  /* banner */
+  .banner {
+    height: 111px;
+
+    img {
+      border-radius: 10px;
+    }
+
+    figcaption {
+      font-size: 24px;
+      left: 16px;
+      width: 225px;
+    }
+  }
+
+  /* cards */
+  .cards_all {
+    &__card {
+      height: 255px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .cardsBakground {
+    grid-template-columns: 1fr;
+    padding: 0;
+    background-color: $color-4;
+    margin: 0;
+    gap: 22px;
+  }
+
+  /* carousel */
+  .carousel {
+    height: 255px;
+
+    &__image {
+      border-radius: 10px;
+    }
+
+    &__arrow {
+      width: 12px;
+      height: 20px;
+
+      &__left {
+        left: -31px;
+      }
+
+      &__right {
+        right: -32px;
+      }
+    }
+
+    &__pagination {
+      display: none;
+    }
+  }
+
+  /* collapse */
+  .collapse {
+    &_header {
+      padding: 10px;
+      width: auto;
+      height: 10px;
+    }
+
+    &__title {
+      font-size: 13px;
+    }
+
+    &__content {
+      p {
+        font-size: 12px;
+        line-height: 17px;
+        font-weight: 400;
+      }
+    }
+
+    &__icon {
+      width: 16px;
+      height: 9px;
+    }
+
+    &__house {
+      flex-direction: column;
+      gap: 20px;
+      justify-content: space-around;
+      margin-bottom: 27px;
+    }
+  }
+
+  /* error */
+  .error {
+    gap: 113px;
+
+    &__title {
+      margin-top: 100px;
+      font-size: 100px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    a {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  /* house*/
+  .house {
+    flex-direction: column;
+
+    &__left {
+      gap: 10px;
+    }
+
+    &__right {
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      align-items: center;
+
+      figure {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+    }
+
+    &__location {
+      font-size: 14px;
+    }
+
+    &__tags {
+      font-size: 10px;
+      padding: 4px 7px;
+    }
+
+    &__photo-profil {
+      width: 32px;
+      height: 32px;
+    }
+
+    &__photo-nom {
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.cardsBakground {
+    background-color: #F6F6F6;
+    padding: 56px 50px 43px;
+    border-radius: 25px;
+    margin: 43px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 50px;
+}
