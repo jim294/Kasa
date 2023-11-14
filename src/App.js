@@ -18,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/house/:id" element={<House />} />
         <Route path="/*" element={<Error />} />
+        <Route path="/Kasa/*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
