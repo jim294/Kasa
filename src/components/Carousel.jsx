@@ -1,4 +1,6 @@
 import { useState } from "react";
+import imgVectorLeft from "../assets/images/Vector-left.png"
+import imgVectorRight from "../assets/images/Vector-right.png"
 
 export default function Carousel(props) {
   const { images, pagination } = props;
@@ -26,13 +28,13 @@ export default function Carousel(props) {
       <img
         className="carousel__arrow carousel__arrow__left"
         onClick={handlePreviousDisplay}
-        src="../images/Vector-left.png"
+        src={imgVectorLeft}
         alt="fleche gauche"
       />
       <img
         className="carousel__arrow carousel__arrow__right"
         onClick={handleNextDisplay}
-        src="../images/Vector-right.png"
+        src={imgVectorRight}
         alt="fleche droite"
       />
       <figcaption className="carousel__pagination">

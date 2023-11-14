@@ -1,9 +1,12 @@
+import imgVectorStarActive from "../assets/images/Vector-star-active.png"
+import imgVectorStarInactive from "../assets/images/Vector-star-inactive.png"
+
 function Stars({ numberActiveStars, numberInactiveStars }) {
   const stars = [];
 
   for (let i = 0; i < numberActiveStars; i++) {
     stars.push(
-      <img key={i} src="../images/Vector-star-active.png" alt="Étoile active" />
+      <img key={i} src={imgVectorStarActive} alt="Étoile active" />
     );
   }
 
@@ -11,7 +14,7 @@ function Stars({ numberActiveStars, numberInactiveStars }) {
     stars.push(
       <img
         key={i + numberActiveStars}
-        src="../images/Vector-star-inactive.png"
+        src={imgVectorStarInactive}
         alt="Étoile inactive"
       />
     );
