@@ -19,7 +19,7 @@ const House = () => {
     } else {
       navigate("/Error");
     }
-  });
+  },[id, navigate]);
   
   if (!logement) {
     return <div></div>;
