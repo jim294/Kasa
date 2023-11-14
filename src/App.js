@@ -18,7 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/house/:id" element={<House />} />
         <Route path="/*" element={<Error />} />
-        <Route path="/Kasa/*" element={<Error />} />
+        <Route path="jim294.github.io/Kasa/*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>
