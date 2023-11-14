@@ -1,5 +1,6 @@
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
+import imgMontagne from "../assets/images/montagne.png"
 
 const collapses = [
   {
@@ -28,7 +29,7 @@ const About = () => {
   return (
     <>
       <main>
-        <Banner imageUrl="./images/montagne.png" alt="image de plage" />
+        <Banner imageUrl={imgMontagne} alt="image de montagne" />
         <section className="about_text">
           {collapses.map((collapse, index) => (
             <Collapse

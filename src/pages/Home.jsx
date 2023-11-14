@@ -1,13 +1,14 @@
 import Banner from "../components/Banner";
 import Cards from "../components/Cards";
 import logements from "../logements.json";
+import imgPlage from "../assets/images/plage.png"
 
 const Home = () => {
   return (
     <>
       <main>
         <Banner
-          imageUrl="./images/plage.png"
+          imageUrl={imgPlage}
           alt="image de plage"
           captionText="Chez vous, partout et ailleurs"
         />

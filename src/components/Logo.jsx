@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
+import imgLogo from '../assets/images/Logo.png'
 
 const Logo = () => {
-  return (
-    <div className="logo">
-      {/* Les images importées depuis la balise IMG sont accessibles dans "public" */}
-      <img src="../images/logo.png" alt="logo kasa" />
-    </div>
-  );
+    return (
+        <div className="logo">
+            <img src={imgLogo} alt="logo kasa" />
+        </div>
+    );
 };
 
 export default Logo;

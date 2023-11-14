@@ -1,4 +1,5 @@
 import { useState } from "react";
+import imgVectorDown from "../assets/images/Vector_down.png"
 
 const Collapse = ({ title, description }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -14,7 +15,7 @@ const Collapse = ({ title, description }) => {
           <p className="collapse__title">{title}</p>
           <img
             className="collapse__icon"
-            src="../images/Vector_down.png"
+            src={imgVectorDown}
             alt="Flèche vers le bas"
           />
         </div>
