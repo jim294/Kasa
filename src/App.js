@@ -12,7 +12,9 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
+        {/* des routes ont été ajouté VS projet uniquement pour le fonctionnement avec le plugging GitHub pages */}
         <Route path="jim294.github.io/Kasa/" element={<Home />} />
+        <Route path="/kasa" element={<Home />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/house/:id" element={<House />} />
