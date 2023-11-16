@@ -1,6 +1,6 @@
 import { useState } from "react";
-import imgVectorLeft from "../assets/images/Vector-left.png"
-import imgVectorRight from "../assets/images/Vector-right.png"
+import imgVectorLeft from "../assets/images/Vector-left.png";
+import imgVectorRight from "../assets/images/Vector-right.png";
 
 export default function Carousel(props) {
   const { images, pagination } = props;

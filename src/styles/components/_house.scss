@@ -1,57 +1,57 @@
 .house {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: $color-1;
+
+  &__left {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    color: $color-1;
+    flex-direction: column;
+    gap: 24px;
 
-    &__left {
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-
-        ul {
-            display: flex;
-            gap: 10px;
-        }
+    ul {
+      display: flex;
+      gap: 10px;
     }
+  }
 
-    &__right {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
-        figure {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 35px;
-        }
+    figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 35px;
     }
+  }
 
-    &__title {
-        font-size: 36px;
-    }
+  &__title {
+    font-size: 36px;
+  }
 
-    &__location {
-        font-size: 18px;
-    }
+  &__location {
+    font-size: 18px;
+  }
 
-    &__tags {
-        padding: 10px 40px;
-        list-style-type: none;
-        background-color: $color-1;
-        color: $color-4;
-        border-radius: 10px;
-    }
+  &__tags {
+    padding: 10px 40px;
+    list-style-type: none;
+    background-color: $color-1;
+    color: $color-4;
+    border-radius: 10px;
+  }
 
-    &__photo-profil {
-        border-radius: 50%;
-        height: 64px;
-    }
+  &__photo-profil {
+    border-radius: 50%;
+    height: 64px;
+  }
 
-    &__photo-nom {
-        font-size: 18px;
-        text-align: right;
-        padding: 10%;
-    }
+  &__photo-nom {
+    font-size: 18px;
+    text-align: right;
+    padding: 10%;
+  }
 }

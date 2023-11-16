@@ -1,26 +1,25 @@
 .error {
-    display: flex;
-    align-items: center;
-    gap: 139px;
-    margin-bottom: 139px;
-    color: $color-1;
+  display: flex;
+  align-items: center;
+  gap: 139px;
+  margin-bottom: 139px;
+  color: $color-1;
 
-    &__title {
-        font-size: 300px;
-        font-weight: 800;
-    }
+  &__title {
+    font-size: 300px;
+    font-weight: 800;
+  }
 
+  p {
+    font-size: 36px;
+  }
+
+  a {
     p {
-        font-size: 36px;
+      font-size: 18px;
+      text-decoration: underline;
+      cursor: pointer;
+      color: $color-1;
     }
-
-    a {
-        p {
-            font-size: 18px;
-            text-decoration: underline;
-            cursor: pointer;
-            color: $color-1;
-
-        }
-    }
+  }
 }

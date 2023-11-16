@@ -1,6 +1,6 @@
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
-import imgMontagne from "../assets/images/montagne.png"
+import imgMontagne from "../assets/images/montagne.png";
 
 const collapses = [
   {

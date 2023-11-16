@@ -1,5 +1,5 @@
 import { useState } from "react";
-import imgVectorDown from "../assets/images/Vector_down.png"
+import imgVectorDown from "../assets/images/Vector_down.png";
 
 const Collapse = ({ title, description }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
