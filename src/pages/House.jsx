@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom"; // hooks utils
 import Stars from "../components/Stars";
 import Collapse from "../components/Collapse";
 import Carousel from "../components/Carousel";
@@ -9,22 +9,20 @@ const House = () => {
   const [logement, setLogement] = useState(null);
   const { id } = useParams();
   const navigate = useNavigate();
+  const house = logements.find((logement) => logement.id === id);
 
   useEffect(() => {
-    const house = logements.find((logement) => logement.id === id);
-
     if (house) {
       setLogement(house);
     } else {
       navigate("/Error");
     }
-  }, [id, navigate]);
+  }, [house, navigate]);
 
   if (!logement) {
-    return <div></div>;
+    return <div>le navigate doit etre rendu</div>;
   }
 
-  const house = logements.find((logement) => logement.id === id);
   const rating = house.rating;
   const numberActiveStars = rating;
   const numberInactiveStars = 5 - numberActiveStars;

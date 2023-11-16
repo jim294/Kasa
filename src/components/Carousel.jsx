@@ -30,14 +30,19 @@ export default function Carousel(props) {
         onClick={handlePreviousDisplay}
         src={imgVectorLeft}
         alt="fleche gauche"
+        style={pagination === 1 ? { display: "none" } : null}
       />
       <img
         className="carousel__arrow carousel__arrow__right"
         onClick={handleNextDisplay}
         src={imgVectorRight}
         alt="fleche droite"
+        style={pagination === 1 ? { display: "none" } : null}
       />
-      <figcaption className="carousel__pagination">
+      <figcaption
+        className="carousel__pagination"
+        style={pagination === 1 ? { display: "none" } : null}
+      >
         {image + 1}/{pagination}
       </figcaption>
     </figure>
