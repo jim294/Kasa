@@ -19,25 +19,18 @@ const House = () => {
     }
   }, [house, navigate]);
 
-  if (!logement) {
-    return <div>le navigate doit etre rendu</div>;
-  }
-
-  const rating = house.rating;
-  const numberActiveStars = rating;
-  const numberInactiveStars = 5 - numberActiveStars;
-
-  return (
+return logement == null  ? (<div>loader...En attente de données chargées</div>) : 
+  (
     <>
       <main>
-        <Carousel images={house.pictures} pagination={house.pictures.length} />
+        <Carousel images={house?.pictures} pagination={house?.pictures.length} />
 
         <section className="house">
           <section className="house__left">
-            <h1 className="house__title">{house.title}</h1>
-            <p className="house__location">{house.location}</p>
+            <h1 className="house__title">{house?.title}</h1>
+            <p className="house__location">{house?.location}</p>
             <ul>
-              {house.tags.map((tag) => (
+              {house?.tags.map((tag) => (
                 <li className="house__tags" key={tag}>
                   {tag}
                 </li>
@@ -48,17 +41,17 @@ const House = () => {
           <section className="house__right">
             <figure>
               <figcaption className="house__photo-nom">
-                {house.host.name}
+                {house?.host.name}
               </figcaption>
               <img
                 className="house__photo-profil"
-                src={house.host.picture}
+                src={house?.host.picture}
                 alt="profil"
               />
             </figure>
             <Stars
-              numberActiveStars={numberActiveStars}
-              numberInactiveStars={numberInactiveStars}
+              numberActiveStars={house?.rating}
+              numberInactiveStars={5-house?.rating}
             />
           </section>
         </section>
@@ -67,14 +60,14 @@ const House = () => {
           <Collapse
             key={Math.random()}
             title="Description"
-            description={house.description}
+            description={house?.description}
           />
           <Collapse
             key={Math.random()}
             title="Équipements"
             description={
               <ul>
-                {house.equipments.map((item) => (
+                {house?.equipments.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
               </ul>
