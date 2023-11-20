@@ -19,15 +19,8 @@ const House = () => {
     }
   }, [house, navigate]);
 
-  if (!logement) {
-    return <div>le navigate doit etre rendu</div>;
-  }
-
-  const rating = house.rating;
-  const numberActiveStars = rating;
-  const numberInactiveStars = 5 - numberActiveStars;
-
-  return (
+return logement == null  ? (<div>loader...En attente de données chargées</div>) : 
+  (
     <>
       <main>
         <Carousel images={house.pictures} pagination={house.pictures.length} />
@@ -57,8 +50,8 @@ const House = () => {
               />
             </figure>
             <Stars
-              numberActiveStars={numberActiveStars}
-              numberInactiveStars={numberInactiveStars}
+              numberActiveStars={house.rating}
+              numberInactiveStars={5-house.rating}
             />
           </section>
         </section>
