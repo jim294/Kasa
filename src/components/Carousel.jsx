@@ -6,19 +6,19 @@ export default function Carousel(props) {
   const { images, pagination } = props;
   const [image, setImage] = useState(0);
 
-  const handleNextDisplay = () => {
-    if (image >= pagination - 1) {
-      setImage(0);
-    } else {
-      setImage(image + 1);
-    }
-  };
-
   const handlePreviousDisplay = () => {
     if (image > 0) {
       setImage(image - 1);
     } else {
       setImage(pagination - 1);
+    }
+  };
+
+  const handleNextDisplay = () => {
+    if (image >= pagination - 1) {
+      setImage(0);
+    } else {
+      setImage(image + 1);
     }
   };
 
