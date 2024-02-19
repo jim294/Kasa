@@ -46,7 +46,3 @@ lancez le projet
 ```terminal
 yarn start
 ```
-Puis enfin, lancez le serveur du fichier FrontEnd
-```terminal
-npm start
-```
